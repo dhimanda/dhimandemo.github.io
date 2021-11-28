@@ -83,23 +83,28 @@
 
 			<div class="content">
 				
-				  <p>Please wait 10 seconds to load submit button!</p>
-				  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-				  <div id="div1">
-					<div class="popup" onclick="myFunction()">
-						<input class="btn btn-success" type="button" value="Submit">
-						<span>Click Now</span>
-						<span class="popuptext" id="myPopup">Your data has been submitted.</span>
+					<p>Please wait 10 seconds to load submit button!</p>
+					<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+						
+
+					<div id="">
+						<div class="popup" onclick="myFunction()">
+							
+							<input class="btn btn-success" id="div1" type="button" value="Submit">
+							<span>Click Now</span>
+							<span class="popuptext" id="myPopup">Your data has been submitted.</span>
+						</div>	
 					</div>
-				  </div>
-				  <script>
-					  $(window).load(function() {
-					function ahref() {
-					  $("#div1").show();
-					};
-					setTimeout(function(){ ahref(); }, 10000);
-				  })
-				  </script>
+					<script>
+						$(window).load(function() {
+						function ahref() {
+							$("#div1").show();
+							var intro = document.getElementsById('dsb');
+							intro.setAttribute("area-level", "lallu"); 
+						};
+						setTimeout(function(){ ahref(); }, 10000);
+						})
+					</script>
 			</div>
 			
 		</div>
