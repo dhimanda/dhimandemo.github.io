@@ -83,11 +83,13 @@
 
 			<div class="content">
 				
-				  
+				  <p>Please wait 5 seconds to load submit button!</p>
 				  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 				  <div id="div1">
-					<a id="single" href="#">Single Play</a>
-					<a id="multi" href="#">Head to Head</a>
+					<div class="popup" onclick="myFunction()">
+						<input type="button" value="Submit">
+						  <span class="popuptext" id="myPopup">Your data has been submitted.</span>
+					</div>
 				  </div>
 				  <script>
 					  $(window).load(function() {
@@ -98,10 +100,7 @@
 				  })
 				  </script>
 			</div>
-			<div class="popup" onclick="myFunction()">
-				<input type="button" value="Submit">
-	  			<span class="popuptext" id="myPopup">Your data has been submitted.</span>
-			</div>
+			
 		</div>
 
 		<hr> <br>
